@@ -12,7 +12,7 @@ public class FightResourceTest {
     @Test
     public void testHelloEndpoint() {
         given()
-          .when().get("/api/fights")
+          .when().get("/api/fights/hello")
           .then()
              .statusCode(200)
              .body(is("hello"));
